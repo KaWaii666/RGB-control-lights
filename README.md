@@ -1,0 +1,2 @@
+This project is used for controlling RGB strip led via the LAN, I use a raspberry pi and put the node js server on it and connect it via LAN.
+I will probably make a mod mamager for it, you will probably can write modules for it like audio spectrum analyzer but i am not sure.

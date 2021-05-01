@@ -14,7 +14,9 @@ app.use("/js", express.static(__dirname + "public/js"));
 app.use("/img", express.static(__dirname + "public/img"));
 app.use("/fonts", express.static(__dirname + "public/fonts"));
 
+
 app.set("views", "./views");
+
 app.set("view engine", "ejs");
 
 
@@ -28,24 +30,14 @@ app.get("", (req, res) => {
 
 
 app.post("/instant_lighting", function(req, res){
-    res.render("index");
+    res.render("instant_lightning");
 
-    foo("instant_lighting");
-
-
-
-});
-
-
-
-app.post("/bottom", function(req, res){
-    res.render("index");
-
-    foo("bottom");
+    setLightColor("instant_lighting");
 
 
 
 });
+
 
 
 app.listen(port, () => console.info("Listenning on port " + port));
