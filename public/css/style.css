@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "arkitech-stencil";
+    src: url("../fonts/arkitech-stencil.ttf");
+}
+
+
+html
+{
+    background-image: url("../img/background.png");
+}
+.main_title
+{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main_title h1
+{
+    color: transparent;
+    font-weight: 700;
+    font-size: 6em;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "arkitech-stencil";
+    background-image: linear-gradient(to right, #f00, #ff0, #0ff, #0f0, #00f);
+    -webkit-background-clip: text;
+    animation: animate 20s linear infinite;
+    background-size: 1000%;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        background-position: 0% 100%;
+    }
+    50%
+    {
+        background-position: 100% 0%;
+    }
+    100%
+    {
+        background-position: 0% 100%;
+    }
+
+}
+
+.Menu_bar
+{
+    position: absolute;
+    display: flex;
+    top: 30%;
+    width: 99%;
+    height: 260px;
+    justify-content: space-between;
+
+}
+
+
+
+.instant_lighting
+{
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    background-color: #3130FF;
+    /*box-shadow: 5px 5px 5px 5px black;*/
+    border: none;
+    text-transform: uppercase;
+    color: #FF5930;
+    font-size: 1.28em;
+    letter-spacing: 5px;
+    font-weight: 700;
+    font-family: "arkitech-stencil";
+    cursor: pointer;
+    transition: 1s;
+}
+
+.instant_lighting:hover
+{
+    width: 280px;
+    height: 280px;
+    transform: translate(-2%, -2%);
+    box-shadow: 5px 5px 5px 5px black;
+}
+.animation
+{
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    background-color: #3130FF;
+    /*box-shadow: 5px 5px 5px 5px black;*/
+    border: none;
+    text-transform: uppercase;
+    color: #FF5930;
+    font-size: 1.28em;
+    letter-spacing: 5px;
+    font-weight: 700;
+    font-family: "arkitech-stencil";
+    cursor: pointer;
+    transition: 1s;    
+}
+.animation:hover
+{
+    width: 280px;
+    height: 280px;
+    transform: translate(-2%, -2%);
+    box-shadow: 5px 5px 5px 5px black;    
+}
+
+
+.custom_color
+{
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    background-color: #3130FF;
+    /*box-shadow: 5px 5px 5px 5px black;*/
+    border: none;
+    text-transform: uppercase;
+    color: #FF5930;
+    font-size: 1.28em;
+    letter-spacing: 5px;
+    font-weight: 700;
+    font-family: "arkitech-stencil";
+    cursor: pointer;
+    transition: 1s;    
+}
+
+.custom_color:hover
+{
+    width: 280px;
+    height: 280px;
+    transform: translate(-2%, -2%);
+    box-shadow: 5px 5px 5px 5px black;  
+}
