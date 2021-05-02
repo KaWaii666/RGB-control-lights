@@ -28,6 +28,13 @@ app.get("", (req, res) => {
 
 });
 
+app.get("/red", function(req, res){
+    res.render("index");
+
+    setLightColor("color");
+
+});
+
 
 app.post("/instant_lighting", function(req, res){
     res.render("instant_lightning");
